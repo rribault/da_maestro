@@ -121,6 +121,7 @@ def server(input: Inputs, output: Outputs, session: Session):
         # www_dir = Path(__file__).parent / "www"
 
         #copy to static_assets
+        os.makedirs('user_documents', exist_ok=True)
         destination_path = os.path.join('user_documents', filename)
         shutil.copy2(file[0]["datapath"], destination_path)
         create_da_path.set(destination_path)

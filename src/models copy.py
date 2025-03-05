@@ -4,7 +4,7 @@ import openpyxl
 from datetime import datetime
 import os
 
-TEMPLATE_PATH = r"src\ressources\template_open.xlsx"
+TEMPLATE_PATH = r"src\ressources\FORMULAIRE_SAS_demande_achat_FR2.xlsx"
 
 class Item(BaseModel):
     description: str | None = Field(None, example="2025-01-20", description="Description de l'article en moins de 50 caractères")
@@ -46,29 +46,29 @@ class DA(BaseModel):
 
         # IDENTITE DU FOURNISSEUR
         sheet['D9'] = self.provider_company
-        sheet['D7'] = self.provider_contact_name
-        sheet['D8'] = self.provider_adress
-        sheet['J6'] = self.provider_phone
-        sheet['J7'] = self.provider_mobile_phone
-        sheet['J8'] = self.provider_email
+        sheet['D10'] = self.provider_contact_name
+        sheet['D11'] = self.provider_adress
+        sheet['I9'] = self.provider_phone
+        sheet['I10'] = self.provider_mobile_phone
+        sheet['I12'] = self.provider_email
 
-        sheet['D9'] = self.quotation_id
-        sheet['H9'] = self.quotation_date
-        sheet['D12'] = self.spending_line
+        sheet['C13'] = self.quotation_id
+        sheet['G13'] = self.quotation_date
+        sheet['E18'] = self.spending_line
 
-        row = 14
+        row = 19
         for item in self.items :
             sheet[f'B{row}'] = item.description
-            sheet[f'J{row}'] = item.qty
-            sheet[f'K{row}'] = item.price_no_tax
+            sheet[f'G{row}'] = item.qty
+            sheet[f'H{row}'] = item.price_no_tax
             row+=1
         
-        # sheet['F47'] = 'oui'
+        sheet['F47'] = 'oui'
 
         # POUR VALIDATION
-        sheet['C31'] = self.employee_name
+        sheet['C56'] = self.employee_name
         # sheet['C57'] = self.employee_email
-        sheet['C33'] = self.employee_date
+        sheet['C58'] = self.employee_date
         # sheet['F56'] = self.responsible_name
         # sheet['F57'] = self.responsible_email
 
