@@ -1,0 +1,146 @@
+
+body {
+    background-color: #9fabbb !important;
+}
+
+.sidebar{
+    background-color: #6f7781 !important;
+    /*color: rgb(0, 0, 0) !important ;*/
+    padding-bottom: None !important;
+}
+
+.sidebar-content{
+    padding-bottom: 0px !important;
+}
+
+
+
+.navbar.navbar-default{
+    background-color: #00395B !important;
+    color: white !important;
+}
+
+
+
+.card-header {
+    color: white;
+    background: #00395B !important;
+    font-weight: bold !important;
+}
+
+#tabs {
+    color: white;
+}
+
+#value_box_wind {
+    /*background-color: #2A2A2A !important;
+    color: white !important;*/
+}
+
+#value_box_wave {
+   /* background-color: #2A2A2A !important;
+    color: white !important;*/
+}
+
+#title {
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 18px;
+
+}
+
+#weather_tab .card-body {
+    row-gap: 0px !important;   
+}
+
+#weather_graph {
+    display: block;
+}
+
+#info_button {
+    margin: 0px !important;
+    padding: 0px !important;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#colone_info {
+    margin: 0px;
+    padding: 0px !important;
+    border: none;
+}
+
+#colone_title {
+    padding-right: 20px !important;
+}
+
+#graph_comp .card-body {
+    padding: 0px !important;
+}
+
+#fullname {
+    margin: auto;
+
+}
+
+#company {
+    margin: auto;
+}
+
+#rb_point-label {
+    font-weight: bold;
+}
+
+#rb_type-label {
+    font-weight: bold;
+}
+
+#rb_units-label {
+    font-weight: bold;
+}
+
+#logo_title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.navbar-brand {
+    margin-right: 18px;
+}
+
+#logo-fem{
+    padding-bottom: 0px;
+    padding-left: 500px;
+}
+
+#fem_button{
+    margin: 0px !important;
+    padding: 0px !important;
+    border: none;
+}
+
+#fem_button:hover {
+    background-color: initial !important;
+    color: initial !important;
+}
+
+#fem_a{
+    margin: 0px !important;
+    padding: 0px !important;
+    border: none !important;
+}
+
+
+

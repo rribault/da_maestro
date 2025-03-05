@@ -1,0 +1,21 @@
+import setuptools
+setuptools.setup(
+    name="da_maestro",
+    version="0.0.1",
+    packages=setuptools.find_packages(where='src'),
+    package_dir={'':'src'},
+    install_requires=[
+        "shiny",
+        "pandas",
+        "pdf2image",
+        "Pillow",
+        "mistralai",
+        "google-genai",
+        "openpyxl",
+        "pydantic",
+        "PyPDF2",
+        "pdf2image"
+    ],
+    include_package_data=True,
+    zip_safe=False,
+)
